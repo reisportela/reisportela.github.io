@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chapter 9 Access to the External Server | A Minimal Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Chapter 9 Access to the External Server | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Access to the External Server | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Yihui Xie">
+
+
+<meta name="date" content="2019-05-27">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="data-confidentiality.html">
+<link rel="next" href="using-the-shell-in-a-linux-operating-system.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
+<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="7" data-path="external.html"><a href="external.html"><i class="fa fa-check"></i><b>7</b> External server</a><ul>
+<li class="chapter" data-level="7.1" data-path="external.html"><a href="external.html#about-bplim"><i class="fa fa-check"></i><b>7.1</b> <span class="underline">About BPLIM</span></a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="data-confidentiality.html"><a href="data-confidentiality.html"><i class="fa fa-check"></i><b>8</b> <span class="underline">Data Confidentiality</span></a></li>
+<li class="chapter" data-level="9" data-path="access-to-the-external-server.html"><a href="access-to-the-external-server.html"><i class="fa fa-check"></i><b>9</b> <span class="underline">Access to the External Server</span></a></li>
+<li class="chapter" data-level="10" data-path="using-the-shell-in-a-linux-operating-system.html"><a href="using-the-shell-in-a-linux-operating-system.html"><i class="fa fa-check"></i><b>10</b> <span class="underline">Using the ‘shell’ in a Linux Operating System</span></a></li>
+<li class="chapter" data-level="11" data-path="using-stata.html"><a href="using-stata.html"><i class="fa fa-check"></i><b>11</b> <span class="underline">Using Stata</span></a></li>
+<li class="chapter" data-level="12" data-path="stata-in-batch-mode.html"><a href="stata-in-batch-mode.html"><i class="fa fa-check"></i><b>12</b> <span class="underline">Stata in ‘batch’ mode</span></a></li>
+<li class="chapter" data-level="13" data-path="additional-statistical-software.html"><a href="additional-statistical-software.html"><i class="fa fa-check"></i><b>13</b> <span class="underline">Additional Statistical Software</span></a></li>
+<li class="chapter" data-level="14" data-path="allowed-outputs.html"><a href="allowed-outputs.html"><i class="fa fa-check"></i><b>14</b> <span class="underline">Allowed outputs</span></a></li>
+<li class="chapter" data-level="15" data-path="remove-outputs.html"><a href="remove-outputs.html"><i class="fa fa-check"></i><b>15</b> <span class="underline">Remove outputs</span></a></li>
+<li class="chapter" data-level="16" data-path="scientific-support.html"><a href="scientific-support.html"><i class="fa fa-check"></i><b>16</b> <span class="underline">Scientific Support</span></a></li>
+<li class="chapter" data-level="17" data-path="appendix-1-basic-shell-commands-on-linux.html"><a href="appendix-1-basic-shell-commands-on-linux.html"><i class="fa fa-check"></i><b>17</b> <span class="underline">Appendix 1 – Basic ‘shell’ Commands on Linux</span></a></li>
+<li class="chapter" data-level="18" data-path="appendix-2-using-the-vi-file-editor.html"><a href="appendix-2-using-the-vi-file-editor.html"><i class="fa fa-check"></i><b>18</b> <span class="underline">Appendix 2 – Using the ‘vi’ file editor</span></a></li>
+<li class="chapter" data-level="19" data-path="appendix-3-external-servers-password-requirements.html"><a href="appendix-3-external-servers-password-requirements.html"><i class="fa fa-check"></i><b>19</b> <span class="underline">Appendix 3 – External server’s password requirements</span></a></li>
+<li class="chapter" data-level="20" data-path="appendix-4-download-install-and-configure-nomachine-client.html"><a href="appendix-4-download-install-and-configure-nomachine-client.html"><i class="fa fa-check"></i><b>20</b> <span class="underline">Appendix 4 – Download, install and configure NoMachine client</span></a></li>
+<li class="chapter" data-level="21" data-path="appendix-5-browser-access.html"><a href="appendix-5-browser-access.html"><i class="fa fa-check"></i><b>21</b> <span class="underline">Appendix 5 – Browser access</span></a></li>
+<li class="chapter" data-level="22" data-path="appendix-6-frequently-asked-questions.html"><a href="appendix-6-frequently-asked-questions.html"><i class="fa fa-check"></i><b>22</b> <span class="underline">Appendix 6 – Frequently Asked Questions</span></a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="access-to-the-external-server" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> <span class="underline">Access to the External Server</span></h1>
+<ol style="list-style-type: decimal">
+<li>Upon access approval, the User will be able to connect to the external server using one of two possibilities.</li>
+</ol>
+<ul>
+<li>NoMachine client access (<span class="underline">preferred</span>): see <strong>Appendix 4</strong> for details on installation and use</li>
+<li>Browser access (<span class="underline">low performance</span>): see <strong>Appendix 5</strong> for further details</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Password policy:</li>
+</ol>
+<ul>
+<li>The first password delivered must be changed at the first login.</li>
+<li>After 60 days the password will expire: change the password within this time frame (see Appendix 3 for instructions on how to change the password)</li>
+<li>The passwords to be specified must meet the requirements described in Appendix 3.</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Upon access using ‘NoMachine’</li>
+</ol>
+<p>These are the first three screens you will see</p>
+<p><img src="media/image1.png" style="width:4.72441in;height:1.72233in" /></p>
+<p><img src="media/image2.png" style="width:4.72441in;height:3.05928in" /></p>
+<p><img src="media/image3.png" style="width:4.72441in;height:2.44898in" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Select the “<strong>Kickoff Application Launcher</strong>” menu (in the lower left corner):</li>
+</ol>
+<p><img src="media/image4.png" style="width:0.57067in;height:0.56371in" /></p>
+<p><img src="media/image5.png" style="width:2.3622in;height:2.63948in" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Then you should:</li>
+</ol>
+<ul>
+<li>Click on the “<strong>Applications</strong>” button</li>
+<li>Select <strong>“BPLIM”</strong> and click on your project (i.e., “pxxx_name”). At this stage, you should see a graphical environment (‘Dolphin’ application<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>) like this:</li>
+</ul>
+<p><img src="media/image6.png" style="width:4.72441in;height:2.80866in" /></p>
+<p>You can see the prompt command line together with ‘Dolphin’ using the
+keyboard shortcut ‘F4’.</p>
+<p>The directories that you have access to within the folder include:</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>initial_dataset</strong></td>
+<td><p>Data sources provided by BPLIM.</p>
+<p><em>You have
+read-only access to this
+directory.</em></p></td>
+</tr>
+<tr class="even">
+<td><strong>results</strong></td>
+<td><p>Output files that
+researchers wish to generate
+and extract from the server.</p>
+<p><em>You
+have read-write access to this
+directory.</em></p></td>
+</tr>
+<tr class="odd">
+<td><strong>tools</strong></td>
+<td><p>Specific analysis tools.</p>
+<p><em>You have read-only access to
+this directory.</em></p></td>
+</tr>
+<tr class="even">
+<td><strong>work_area</strong></td>
+<td><p>Temporary
+work directory.</p>
+<p><em>You have read-write
+access to this directory.</em></p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>By default you also have two files (see image above): (1)
+stata15mp.sh; (2) xstata15mp.sh. Files with the
+&quot;<strong><span class="underline">sh</span></strong>&quot; extension allow you to send commands to
+your operating system or to enter your operating system for
+interactive use. The first one starts Stata version 15 in
+non-graphical mode, while the second launches Stata 15 in
+graphical mode. You can start both applications by typing in the
+Linux shell, for example, ‘xstata15mp.sh’, or by double clicking
+the file name in ‘Dolphin’<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p></li>
+<li><p>To reset and disconnect the remote desktop connection or session,
+you can simply log out your remote session, as shown on the
+screenshot below. After you log out, close the window.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p></li>
+</ul>
+<p><img src="media/image7.png" style="width:3.14961in;height:3.50521in" /></p>
+<p>Confirm before exiting by clicking on the <strong>&quot;Logout&quot;</strong> button to close the window<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p><img src="media/image8.png" style="width:1.14236in;height:0.52288in" /></p>
+<ul>
+<li>In case you do not logout, your session will be left open until your
+next login. You may use this facility to run your programs. However,
+one must be aware that this option uses resources from the server,
+so the efficient solution to run your programs “over night” is using
+the batch mode as described in Step 6 below. Furthermore, in case
+the server is rebooted during a maintenance procedure your session
+will be automatically close and unsaved documents will be lost. We
+recommend you save at regular intervals your statistical programs.</li>
+</ul>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Dolphin is an intuitive and easy-to-use file manager. You can use it, for example, to browse the directory, to
+create or to delete files/directories (by using the right mouse
+button). For more information about Dolphin, please visit:
+<a href="https://translate.google.com/translate?hl=en&amp;prev=_t&amp;sl=pt-BR&amp;tl=en&amp;u=https://userbase.kde.org/Dolphin"><em><span class="underline">https://userbase.kde.org/Dolphin</span></em></a>
+.<a href="access-to-the-external-server.html#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>In case ‘xstata15mp.sh’ does not launch Stata please see ‘Section
+5.1.b’.<a href="access-to-the-external-server.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>Click on the cross button at the upper right corner to close.<a href="access-to-the-external-server.html#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Note that before exiting the server, you need to make
+sure that all active programs have been closed (unless they have
+been launched in <em>batch</em> mode). Running programs in <em>batch</em> mode is justified for
+procedures that require high computational resources, intense
+calculation and / or long processing time.<a href="access-to-the-external-server.html#fnref4" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-confidentiality.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="using-the-shell-in-a-linux-operating-system.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-external.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
