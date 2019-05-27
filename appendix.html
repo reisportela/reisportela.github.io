@@ -1,0 +1,2754 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chapter 19 Appendix | A bookdown Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Chapter 19 Appendix | A bookdown Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 19 Appendix | A bookdown Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="BPLIM staff">
+
+
+<meta name="date" content="2019-05-27">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="auxiliary-files.html">
+<link rel="next" href="references-1.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
+<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="7" data-path="external.html"><a href="external.html"><i class="fa fa-check"></i><b>7</b> External server</a><ul>
+<li class="chapter" data-level="7.1" data-path="external.html"><a href="external.html#about-bplim"><i class="fa fa-check"></i><b>7.1</b> <span class="underline">About BPLIM</span></a></li>
+<li class="chapter" data-level="7.2" data-path="external.html"><a href="external.html#data-confidentiality"><i class="fa fa-check"></i><b>7.2</b> <span class="underline">Data Confidentiality</span></a></li>
+<li class="chapter" data-level="7.3" data-path="external.html"><a href="external.html#access-to-the-external-server"><i class="fa fa-check"></i><b>7.3</b> <span class="underline">Access to the External Server</span></a></li>
+<li class="chapter" data-level="7.4" data-path="external.html"><a href="external.html#using-the-shell-in-a-linux-operating-system"><i class="fa fa-check"></i><b>7.4</b> <span class="underline">Using the ‘shell’ in a Linux Operating System</span></a></li>
+<li class="chapter" data-level="7.5" data-path="external.html"><a href="external.html#using-stata"><i class="fa fa-check"></i><b>7.5</b> <span class="underline">Using Stata</span></a></li>
+<li class="chapter" data-level="7.6" data-path="external.html"><a href="external.html#stata-in-batch-mode"><i class="fa fa-check"></i><b>7.6</b> <span class="underline">Stata in ‘batch’ mode</span></a></li>
+<li class="chapter" data-level="7.7" data-path="external.html"><a href="external.html#additional-statistical-software"><i class="fa fa-check"></i><b>7.7</b> <span class="underline">Additional Statistical Software</span></a></li>
+<li class="chapter" data-level="7.8" data-path="external.html"><a href="external.html#allowed-outputs"><i class="fa fa-check"></i><b>7.8</b> <span class="underline">Allowed outputs</span></a></li>
+<li class="chapter" data-level="7.9" data-path="external.html"><a href="external.html#remove-outputs"><i class="fa fa-check"></i><b>7.9</b> <span class="underline">Remove outputs</span></a></li>
+<li class="chapter" data-level="7.10" data-path="external.html"><a href="external.html#scientific-support"><i class="fa fa-check"></i><b>7.10</b> <span class="underline">Scientific Support</span></a></li>
+<li class="chapter" data-level="7.11" data-path="external.html"><a href="external.html#appendix-1-basic-shell-commands-on-linux"><i class="fa fa-check"></i><b>7.11</b> <span class="underline">Appendix 1 – Basic ‘shell’ Commands on Linux</span></a></li>
+<li class="chapter" data-level="7.12" data-path="external.html"><a href="external.html#appendix-2-using-the-vi-file-editor"><i class="fa fa-check"></i><b>7.12</b> <span class="underline">Appendix 2 – Using the ‘vi’ file editor</span></a></li>
+<li class="chapter" data-level="7.13" data-path="external.html"><a href="external.html#appendix-3-external-servers-password-requirements"><i class="fa fa-check"></i><b>7.13</b> <span class="underline">Appendix 3 – External server’s password requirements</span></a></li>
+<li class="chapter" data-level="7.14" data-path="external.html"><a href="external.html#appendix-4-download-install-and-configure-nomachine-client"><i class="fa fa-check"></i><b>7.14</b> <span class="underline">Appendix 4 – Download, install and configure NoMachine client</span></a></li>
+<li class="chapter" data-level="7.15" data-path="external.html"><a href="external.html#appendix-5-browser-access"><i class="fa fa-check"></i><b>7.15</b> <span class="underline">Appendix 5 – Browser access</span></a></li>
+<li class="chapter" data-level="7.16" data-path="external.html"><a href="external.html#appendix-6-frequently-asked-questions"><i class="fa fa-check"></i><b>7.16</b> <span class="underline">Appendix 6 – Frequently Asked Questions</span></a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="central-de-balancos-central-balance-sheet-database-harmonized-panel-data.html"><a href="central-de-balancos-central-balance-sheet-database-harmonized-panel-data.html"><i class="fa fa-check"></i><b>8</b> Central de Balanços (Central Balance Sheet Database) - Harmonized Panel Data</a><ul>
+<li class="chapter" data-level="8.1" data-path="central-de-balancos-central-balance-sheet-database-harmonized-panel-data.html"><a href="central-de-balancos-central-balance-sheet-database-harmonized-panel-data.html#data-manual"><i class="fa fa-check"></i><b>8.1</b> Data manual</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="table-of-contents.html"><a href="table-of-contents.html"><i class="fa fa-check"></i><b>9</b> Table of contents</a></li>
+<li class="chapter" data-level="10" data-path="general-information.html"><a href="general-information.html"><i class="fa fa-check"></i><b>10</b> General Information</a></li>
+<li class="chapter" data-level="11" data-path="geographical-coverage.html"><a href="geographical-coverage.html"><i class="fa fa-check"></i><b>11</b> Geographical Coverage</a></li>
+<li class="chapter" data-level="12" data-path="population.html"><a href="population.html"><i class="fa fa-check"></i><b>12</b> Population</a></li>
+<li class="chapter" data-level="13" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>13</b> Methodology</a></li>
+<li class="chapter" data-level="14" data-path="description-of-files.html"><a href="description-of-files.html"><i class="fa fa-check"></i><b>14</b> Description of Files</a></li>
+<li class="chapter" data-level="15" data-path="description-of-variables.html"><a href="description-of-variables.html"><i class="fa fa-check"></i><b>15</b> Description of Variables</a><ul>
+<li class="chapter" data-level="15.1" data-path="description-of-variables.html"><a href="description-of-variables.html#a.-general-information-file-cover-sheet"><i class="fa fa-check"></i><b>15.1</b> A. General Information File (Cover Sheet)</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="description-of-variables.html"><a href="description-of-variables.html#a1.-identifiers"><i class="fa fa-check"></i><b>15.1.1</b> A1. Identifiers</a></li>
+<li class="chapter" data-level="15.1.2" data-path="description-of-variables.html"><a href="description-of-variables.html#a2.-other-variables"><i class="fa fa-check"></i><b>15.1.2</b> A2. Other variables</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="description-of-variables.html"><a href="description-of-variables.html#b.-economic-and-financial-information-file"><i class="fa fa-check"></i><b>15.2</b> B. Economic and Financial Information File</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="description-of-variables.html"><a href="description-of-variables.html#b1.-identifiers"><i class="fa fa-check"></i><b>15.2.1</b> B1. Identifiers</a></li>
+<li class="chapter" data-level="15.2.2" data-path="description-of-variables.html"><a href="description-of-variables.html#b2.-balance-sheet-variables"><i class="fa fa-check"></i><b>15.2.2</b> B2. Balance Sheet Variables</a></li>
+<li class="chapter" data-level="15.2.3" data-path="description-of-variables.html"><a href="description-of-variables.html#assets"><i class="fa fa-check"></i><b>15.2.3</b> Assets</a></li>
+<li class="chapter" data-level="15.2.4" data-path="description-of-variables.html"><a href="description-of-variables.html#equity"><i class="fa fa-check"></i><b>15.2.4</b> Equity</a></li>
+<li class="chapter" data-level="15.2.5" data-path="description-of-variables.html"><a href="description-of-variables.html#liabilities"><i class="fa fa-check"></i><b>15.2.5</b> Liabilities</a></li>
+<li class="chapter" data-level="15.2.6" data-path="description-of-variables.html"><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables"><i class="fa fa-check"></i><b>15.2.6</b> B3. Profit and Loss Statement Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="description-of-variables.html"><a href="description-of-variables.html#c.-employment-information-file"><i class="fa fa-check"></i><b>15.3</b> C. Employment Information File</a><ul>
+<li class="chapter" data-level="15.3.1" data-path="description-of-variables.html"><a href="description-of-variables.html#c1.-identifiers"><i class="fa fa-check"></i><b>15.3.1</b> C1. Identifiers</a></li>
+<li class="chapter" data-level="15.3.2" data-path="description-of-variables.html"><a href="description-of-variables.html#c2.-number-of-employees"><i class="fa fa-check"></i><b>15.3.2</b> C2. Number of employees</a></li>
+<li class="chapter" data-level="15.3.3" data-path="description-of-variables.html"><a href="description-of-variables.html#c3.-number-of-hours-of-work"><i class="fa fa-check"></i><b>15.3.3</b> C3. Number of hours of work</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="description-of-variables.html"><a href="description-of-variables.html#d.-trade-information-per-market-file"><i class="fa fa-check"></i><b>15.4</b> D. Trade information per market file</a><ul>
+<li class="chapter" data-level="15.4.1" data-path="description-of-variables.html"><a href="description-of-variables.html#d1.-identifiers"><i class="fa fa-check"></i><b>15.4.1</b> D1. Identifiers</a></li>
+<li class="chapter" data-level="15.4.2" data-path="description-of-variables.html"><a href="description-of-variables.html#d2.-variables-available"><i class="fa fa-check"></i><b>15.4.2</b> D2. Variables available</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="description-of-variables.html"><a href="description-of-variables.html#e.-economic-and-financial-indicators"><i class="fa fa-check"></i><b>15.5</b> E. Economic and Financial indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="basic-descriptive-statistics.html"><a href="basic-descriptive-statistics.html"><i class="fa fa-check"></i><b>16</b> Basic Descriptive Statistics</a></li>
+<li class="chapter" data-level="17" data-path="citation-of-this-dataset.html"><a href="citation-of-this-dataset.html"><i class="fa fa-check"></i><b>17</b> Citation of this dataset</a></li>
+<li class="chapter" data-level="18" data-path="auxiliary-files.html"><a href="auxiliary-files.html"><i class="fa fa-check"></i><b>18</b> Auxiliary Files</a><ul>
+<li class="chapter" data-level="18.1" data-path="auxiliary-files.html"><a href="auxiliary-files.html#references"><i class="fa fa-check"></i><b>18.1</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>19</b> Appendix</a><ul>
+<li class="chapter" data-level="19.1" data-path="appendix.html"><a href="appendix.html#balance-sheet-variables"><i class="fa fa-check"></i><b>19.1</b> Balance Sheet Variables</a></li>
+<li class="chapter" data-level="19.2" data-path="appendix.html"><a href="appendix.html#b001---formula-in-poc"><i class="fa fa-check"></i><b>19.2</b> B001 - Formula in POC</a></li>
+<li class="chapter" data-level="19.3" data-path="appendix.html"><a href="appendix.html#b004---formula-in-poc"><i class="fa fa-check"></i><b>19.3</b> B004 - Formula in POC</a></li>
+<li class="chapter" data-level="19.4" data-path="appendix.html"><a href="appendix.html#b005---formula-in-poc"><i class="fa fa-check"></i><b>19.4</b> B005 - Formula in POC</a></li>
+<li class="chapter" data-level="19.5" data-path="appendix.html"><a href="appendix.html#b012---formula-in-poc"><i class="fa fa-check"></i><b>19.5</b> B012 - Formula in POC</a></li>
+<li class="chapter" data-level="19.6" data-path="appendix.html"><a href="appendix.html#b025---formula-in-poc"><i class="fa fa-check"></i><b>19.6</b> B025 - Formula in POC</a></li>
+<li class="chapter" data-level="19.7" data-path="appendix.html"><a href="appendix.html#b029---formula-in-poc"><i class="fa fa-check"></i><b>19.7</b> B029 - Formula in POC</a></li>
+<li class="chapter" data-level="19.8" data-path="appendix.html"><a href="appendix.html#b032---formula-in-poc"><i class="fa fa-check"></i><b>19.8</b> B032 - Formula in POC</a></li>
+<li class="chapter" data-level="19.9" data-path="appendix.html"><a href="appendix.html#b041---formula-in-poc"><i class="fa fa-check"></i><b>19.9</b> B041 - Formula in POC</a></li>
+<li class="chapter" data-level="19.10" data-path="appendix.html"><a href="appendix.html#b042---formula-in-poc"><i class="fa fa-check"></i><b>19.10</b> B042 - Formula in POC</a></li>
+<li class="chapter" data-level="19.11" data-path="appendix.html"><a href="appendix.html#b049---formula-in-poc"><i class="fa fa-check"></i><b>19.11</b> B049 - Formula in POC</a></li>
+<li class="chapter" data-level="19.12" data-path="appendix.html"><a href="appendix.html#b060---formula-in-poc"><i class="fa fa-check"></i><b>19.12</b> B060 - Formula in POC</a></li>
+<li class="chapter" data-level="19.13" data-path="appendix.html"><a href="appendix.html#b061---formula-in-poc"><i class="fa fa-check"></i><b>19.13</b> B061 - Formula in POC</a></li>
+<li class="chapter" data-level="19.14" data-path="appendix.html"><a href="appendix.html#b074---formula-in-poc"><i class="fa fa-check"></i><b>19.14</b> B074 - Formula in POC</a></li>
+<li class="chapter" data-level="19.15" data-path="appendix.html"><a href="appendix.html#b080---formula-in-poc"><i class="fa fa-check"></i><b>19.15</b> B080 - Formula in POC</a></li>
+<li class="chapter" data-level="19.16" data-path="appendix.html"><a href="appendix.html#b081---formula-in-poc"><i class="fa fa-check"></i><b>19.16</b> B081 - Formula in POC</a></li>
+<li class="chapter" data-level="19.17" data-path="appendix.html"><a href="appendix.html#b085---formula-in-poc"><i class="fa fa-check"></i><b>19.17</b> B085 - Formula in POC</a></li>
+<li class="chapter" data-level="19.18" data-path="appendix.html"><a href="appendix.html#b089---formula-in-poc"><i class="fa fa-check"></i><b>19.18</b> B089 - Formula in POC</a></li>
+<li class="chapter" data-level="19.19" data-path="appendix.html"><a href="appendix.html#b093---formula-in-poc"><i class="fa fa-check"></i><b>19.19</b> B093 - Formula in POC</a></li>
+<li class="chapter" data-level="19.20" data-path="appendix.html"><a href="appendix.html#b094---formula-in-poc"><i class="fa fa-check"></i><b>19.20</b> B094 - Formula in POC</a></li>
+<li class="chapter" data-level="19.21" data-path="appendix.html"><a href="appendix.html#b143---formula-in-poc"><i class="fa fa-check"></i><b>19.21</b> B143 - Formula in POC</a></li>
+<li class="chapter" data-level="19.22" data-path="appendix.html"><a href="appendix.html#b158---formula-in-poc"><i class="fa fa-check"></i><b>19.22</b> B158 - Formula in POC</a></li>
+<li class="chapter" data-level="19.23" data-path="appendix.html"><a href="appendix.html#b159---formula-in-poc"><i class="fa fa-check"></i><b>19.23</b> B159 - Formula in POC</a></li>
+<li class="chapter" data-level="19.24" data-path="appendix.html"><a href="appendix.html#b160---formula-in-poc"><i class="fa fa-check"></i><b>19.24</b> B160 - Formula in POC</a></li>
+<li class="chapter" data-level="19.25" data-path="appendix.html"><a href="appendix.html#b161---formula-in-poc"><i class="fa fa-check"></i><b>19.25</b> B161 - Formula in POC</a></li>
+<li class="chapter" data-level="19.26" data-path="appendix.html"><a href="appendix.html#bl005---formula-in-poc"><i class="fa fa-check"></i><b>19.26</b> BL005 - Formula in POC</a></li>
+<li class="chapter" data-level="19.27" data-path="appendix.html"><a href="appendix.html#bl007---formula-in-poc"><i class="fa fa-check"></i><b>19.27</b> BL007 - Formula in POC</a></li>
+<li class="chapter" data-level="19.28" data-path="appendix.html"><a href="appendix.html#profit-and-loss-statement-variables"><i class="fa fa-check"></i><b>19.28</b> Profit and Loss Statement Variables</a></li>
+<li class="chapter" data-level="19.29" data-path="appendix.html"><a href="appendix.html#d001---formula-in-poc"><i class="fa fa-check"></i><b>19.29</b> D001 - Formula in POC</a></li>
+<li class="chapter" data-level="19.30" data-path="appendix.html"><a href="appendix.html#d002---formula-in-poc"><i class="fa fa-check"></i><b>19.30</b> D002 - Formula in POC</a></li>
+<li class="chapter" data-level="19.31" data-path="appendix.html"><a href="appendix.html#d005---formula-in-poc"><i class="fa fa-check"></i><b>19.31</b> D005 - Formula in POC</a></li>
+<li class="chapter" data-level="19.32" data-path="appendix.html"><a href="appendix.html#d006---formula-in-poc"><i class="fa fa-check"></i><b>19.32</b> D006 - Formula in POC</a></li>
+<li class="chapter" data-level="19.33" data-path="appendix.html"><a href="appendix.html#d007---formula-in-poc"><i class="fa fa-check"></i><b>19.33</b> D007 - Formula in POC</a></li>
+<li class="chapter" data-level="19.34" data-path="appendix.html"><a href="appendix.html#d013---formula-in-poc"><i class="fa fa-check"></i><b>19.34</b> D013 - Formula in POC</a></li>
+<li class="chapter" data-level="19.35" data-path="appendix.html"><a href="appendix.html#d021---formula-in-poc"><i class="fa fa-check"></i><b>19.35</b> D021 - Formula in POC</a></li>
+<li class="chapter" data-level="19.36" data-path="appendix.html"><a href="appendix.html#d025---formula-in-poc"><i class="fa fa-check"></i><b>19.36</b> D025 - Formula in POC</a></li>
+<li class="chapter" data-level="19.37" data-path="appendix.html"><a href="appendix.html#d026---formula-in-poc"><i class="fa fa-check"></i><b>19.37</b> D026 - Formula in POC</a></li>
+<li class="chapter" data-level="19.38" data-path="appendix.html"><a href="appendix.html#d029---formula-in-poc"><i class="fa fa-check"></i><b>19.38</b> D029 - Formula in POC</a></li>
+<li class="chapter" data-level="19.39" data-path="appendix.html"><a href="appendix.html#d030---formula-in-poc"><i class="fa fa-check"></i><b>19.39</b> D030 - Formula in POC</a></li>
+<li class="chapter" data-level="19.40" data-path="appendix.html"><a href="appendix.html#d041---formula-in-poc"><i class="fa fa-check"></i><b>19.40</b> D041 - Formula in POC</a></li>
+<li class="chapter" data-level="19.41" data-path="appendix.html"><a href="appendix.html#d053---formula-in-poc"><i class="fa fa-check"></i><b>19.41</b> D053 - Formula in POC</a></li>
+<li class="chapter" data-level="19.42" data-path="appendix.html"><a href="appendix.html#d060---formula-in-poc"><i class="fa fa-check"></i><b>19.42</b> D060 - Formula in POC</a></li>
+<li class="chapter" data-level="19.43" data-path="appendix.html"><a href="appendix.html#d062---formula-in-poc"><i class="fa fa-check"></i><b>19.43</b> D062 - Formula in POC</a></li>
+<li class="chapter" data-level="19.44" data-path="appendix.html"><a href="appendix.html#d082---formula-in-poc"><i class="fa fa-check"></i><b>19.44</b> D082 - Formula in POC</a></li>
+<li class="chapter" data-level="19.45" data-path="appendix.html"><a href="appendix.html#d084---formula-in-poc"><i class="fa fa-check"></i><b>19.45</b> D084 - Formula in POC</a></li>
+<li class="chapter" data-level="19.46" data-path="appendix.html"><a href="appendix.html#d085---formula-in-poc"><i class="fa fa-check"></i><b>19.46</b> D085 - Formula in POC</a></li>
+<li class="chapter" data-level="19.47" data-path="appendix.html"><a href="appendix.html#d086---formula-in-poc"><i class="fa fa-check"></i><b>19.47</b> D086 - Formula in POC</a></li>
+<li class="chapter" data-level="19.48" data-path="appendix.html"><a href="appendix.html#d087---formula-in-poc"><i class="fa fa-check"></i><b>19.48</b> D087 - Formula in POC</a></li>
+<li class="chapter" data-level="19.49" data-path="appendix.html"><a href="appendix.html#d108---formula-in-poc"><i class="fa fa-check"></i><b>19.49</b> D108 - Formula in POC</a></li>
+<li class="chapter" data-level="19.50" data-path="appendix.html"><a href="appendix.html#d111---formula-in-poc"><i class="fa fa-check"></i><b>19.50</b> D111 - Formula in POC</a></li>
+<li class="chapter" data-level="19.51" data-path="appendix.html"><a href="appendix.html#d112---formula-in-poc"><i class="fa fa-check"></i><b>19.51</b> D112 - Formula in POC</a></li>
+<li class="chapter" data-level="19.52" data-path="appendix.html"><a href="appendix.html#dl002---formula-in-poc"><i class="fa fa-check"></i><b>19.52</b> DL002 - Formula in POC</a></li>
+<li class="chapter" data-level="19.53" data-path="appendix.html"><a href="appendix.html#dl005---formula-in-poc"><i class="fa fa-check"></i><b>19.53</b> DL005 - Formula in POC</a></li>
+<li class="chapter" data-level="19.54" data-path="appendix.html"><a href="appendix.html#dl011---formula-in-poc"><i class="fa fa-check"></i><b>19.54</b> DL011 - Formula in POC</a></li>
+<li class="chapter" data-level="19.55" data-path="appendix.html"><a href="appendix.html#dl012---formula-in-poc"><i class="fa fa-check"></i><b>19.55</b> DL012 - Formula in POC</a></li>
+<li class="chapter" data-level="19.56" data-path="appendix.html"><a href="appendix.html#dl013---formula-in-poc"><i class="fa fa-check"></i><b>19.56</b> DL013 - Formula in POC</a></li>
+<li class="chapter" data-level="19.57" data-path="appendix.html"><a href="appendix.html#dl014---formula-in-poc"><i class="fa fa-check"></i><b>19.57</b> DL014 - Formula in POC</a></li>
+<li class="chapter" data-level="19.58" data-path="appendix.html"><a href="appendix.html#dl017---formula-in-poc"><i class="fa fa-check"></i><b>19.58</b> DL017 - Formula in POC</a></li>
+<li class="chapter" data-level="19.59" data-path="appendix.html"><a href="appendix.html#dl043---formula-in-poc"><i class="fa fa-check"></i><b>19.59</b> DL043 - Formula in POC</a></li>
+<li class="chapter" data-level="19.60" data-path="appendix.html"><a href="appendix.html#dl045---formula-in-poc"><i class="fa fa-check"></i><b>19.60</b> DL045 - Formula in POC</a></li>
+<li class="chapter" data-level="19.61" data-path="appendix.html"><a href="appendix.html#dl047---formula-in-poc"><i class="fa fa-check"></i><b>19.61</b> DL047 - Formula in POC</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i><b>20</b> References</a></li>
+<li class="chapter" data-level="" data-path="references-2.html"><a href="references-2.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A bookdown Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="appendix" class="section level1">
+<h1><span class="header-section-number">Chapter 19</span> Appendix</h1>
+<div id="balance-sheet-variables" class="section level2">
+<h2><span class="header-section-number">19.1</span> Balance Sheet Variables</h2>
+</div>
+<div id="b001---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.2</span> B001 - Formula in POC</h2>
+<p><strong>Total Assets</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b004---formula-in-poc">B004</a></td>
+<td align="left">Total non-current assets (QS)</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#b029---formula-in-poc">B029</a></td>
+<td align="left">Total current assets (QS)</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b004---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.3</span> B004 - Formula in POC</h2>
+<p><strong>Total non-current assets (QS)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b005---formula-in-poc">B005</a></td>
+<td align="left">Fixed tangible assets and intangible assets</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#b025---formula-in-poc">B025</a></td>
+<td align="left">Financial investments</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b158---formula-in-poc">B158</a></td>
+<td align="left">Non-current assets - Remaining non-current assets</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b005---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.4</span> B005 - Formula in POC</h2>
+<p><strong>Fixed Tangible Assets and Intangible Assets</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03088</td>
+<td align="left">Intangible assets</td>
+<td align="left">Q04-A0207-3-soma</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03117</td>
+<td align="left">Tangible fixed assets</td>
+<td align="left">Q04-A0218-3-soma</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03587</td>
+<td align="left">Investment in properties</td>
+<td align="left">Q05-0510-Nota10-A1489-9-soma</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03642</td>
+<td align="left">Amortizations and adjustments - Financial investments - Investment in properties</td>
+<td align="left">Q05-0510-Nota10-A1506-4-soma</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b012---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.5</span> B012 - Formula in POC</h2>
+<p><strong>Fixed Tangible Assets</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03117</td>
+<td align="left">Tangible fixed assets</td>
+<td align="left">Q04-A0218-3-soma</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03587</td>
+<td align="left">Investment in properties</td>
+<td align="left">Q05-0510-Nota10-A1489-9-soma</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03642</td>
+<td align="left">Amortizations and adjustments - Financial investments - Investment in properties</td>
+<td align="left">Q05-0510-Nota10-A1506-4-soma</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b025---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.6</span> B025 - Formula in POC</h2>
+<p><strong>Financial Investments</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03140</td>
+<td align="left">Financial investments</td>
+<td align="left">Q04-A0227-3-soma</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03587</td>
+<td align="left">Investment in properties</td>
+<td align="left">Q05-0510-Nota10-A1489-9-soma</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03642</td>
+<td align="left">Amortizations and adjustments - Financial investments - Investment in properties</td>
+<td align="left">Q05-0510-Nota10-A1506-4-soma</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b029---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.7</span> B029 - Formula in POC</h2>
+<p><strong>Total current assets</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b032---formula-in-poc">B032</a></td>
+<td align="left">Current assets - Inventories and biological assets</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#b041---formula-in-poc">B041</a></td>
+<td align="left">Current assets - Customers</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b159---formula-in-poc">B159</a></td>
+<td align="left">Current assets - Remaining current assets</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#b049---formula-in-poc">B049</a></td>
+<td align="left">Current assets - Cash and bank deposits</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b032---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.8</span> B032 - Formula in POC</h2>
+<p><strong>Current Assets - Inventories and Biological Assets</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03159</td>
+<td align="left">Current assets - Inventories</td>
+<td align="left">Q04-A0234-3-soma</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b041---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.9</span> B041 - Formula in POC</h2>
+<p><strong>Current Assets - Customers</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03162</td>
+<td align="left">Assets - Medium and long term debt - Customers (current account)</td>
+<td align="left">Q04-A0235-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03165</td>
+<td align="left">Assets - Medium and long term debt - Customers - Notes receivable</td>
+<td align="left">Q04-A0236-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03168</td>
+<td align="left">Assets - Medium and long term debt - Customers - Doubtful debtors</td>
+<td align="left">Q04-A0237-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03194</td>
+<td align="left">Assets - Short term debt - Customers (current account)</td>
+<td align="left">Q04-A0247-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03197</td>
+<td align="left">Assets - Short term debt - Customers - Notes receivable</td>
+<td align="left">Q04-A0248-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03200</td>
+<td align="left">Assets - Short term debt - Customers - Doubtful debtors</td>
+<td align="left">Q04-A0249-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03289</td>
+<td align="left">Liabilities - Medium and long term debt - Advances from customers</td>
+<td align="left">Q04-A0308-1</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03307</td>
+<td align="left">Liabilities - Short term debt - Advances from customers</td>
+<td align="left">Q04-A0326-1</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b042---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.10</span> B042 - Formula in POC</h2>
+<p><strong>Current assets - State and other public entities</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03182</td>
+<td align="left">Assets - Medium and long term debt - State and other public entities (Net Assets)</td>
+<td align="left">Q04-A0243-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03214</td>
+<td align="left">Assets - Short term debt - State and other public entities (Net Assets)</td>
+<td align="left">Q04-A0255-3</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b049---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.11</span> B049 - Formula in POC</h2>
+<p><strong>Current Assets - Cash and Bank Deposits</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF05131</td>
+<td align="left">Assets - Cash and bank deposits</td>
+<td align="left">Q04-A0268-3-soma</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b060---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.12</span> B060 - Formula in POC</h2>
+<p><strong>Equity and Liabilities</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b061---formula-in-poc">B061</a></td>
+<td align="left">Equity (QS)</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#b080---formula-in-poc">B080</a></td>
+<td align="left">Liabilities (QS)</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#equity">return</a></p>
+<hr />
+</div>
+<div id="b061---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.13</span> B061 - Formula in POC</h2>
+<p><strong>Equity</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03258</td>
+<td align="left">Equity - Capital</td>
+<td align="left">Q04-A0277-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03188</td>
+<td align="left">Assets - Medium and long term debt - Subscribed capital</td>
+<td align="left">Q04-A0245-3</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03220</td>
+<td align="left">Assets - Short term debt - Subscribed capital</td>
+<td align="left">Q04-A0257-3</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03261</td>
+<td align="left">Equity - Supplementary capital</td>
+<td align="left">Q04-A0280-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03265</td>
+<td align="left">Equity - Reserves- Legal reserves</td>
+<td align="left">Q04-A0284-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03266</td>
+<td align="left">Equity - Reserves- Statutory reserves</td>
+<td align="left">Q04-A0285-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03267</td>
+<td align="left">Equity - Reserves- Contractual reserves</td>
+<td align="left">Q04-A0286-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03268</td>
+<td align="left">Equity - Reserves- Other reserves</td>
+<td align="left">Q04-A0287-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03269</td>
+<td align="left">Equity - Retained earnings</td>
+<td align="left">Q04-A0288-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03259</td>
+<td align="left">Equity - Own shares- Nominal value</td>
+<td align="left">Q04-A0278-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03260</td>
+<td align="left">Equity - Own shares- Discounts and Premiums</td>
+<td align="left">Q04-A0279-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03262</td>
+<td align="left">Equity - Share Premiums</td>
+<td align="left">Q04-A0281-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03263</td>
+<td align="left">Equity - Adjustments to investments in group and associated companies</td>
+<td align="left">Q04-A0282-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03264</td>
+<td align="left">Equity - Revaluation reserves</td>
+<td align="left">Q04-A0283-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF04061</td>
+<td align="left">Split of account Accruals and deferrals - Investment subsidies</td>
+<td align="left">Q06-A0666</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03270</td>
+<td align="left">Equity - Net income</td>
+<td align="left">Q04-A0289-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03271</td>
+<td align="left">Equity - Interim dividends</td>
+<td align="left">Q04-A0290-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#equity">return</a></p>
+<hr />
+</div>
+<div id="b074---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.14</span> B074 - Formula in POC</h2>
+<p><strong>Interim dividends</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03271</td>
+<td align="left">Equity - Interim dividends</td>
+<td align="left">Q04-A0290-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#equity">return</a></p>
+<hr />
+</div>
+<div id="b080---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.15</span> B080 - Formula in POC</h2>
+<p><strong>Liabilities - Total</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b081---formula-in-poc">B081</a></td>
+<td align="left">Non-current liabilities</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#b089---formula-in-poc">B089</a></td>
+<td align="left">Current liabilities (QS)</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#liabilities">return</a></p>
+<hr />
+</div>
+<div id="b081---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.16</span> B081 - Formula in POC</h2>
+<p><strong>Non-current liabilities- Total</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b085---formula-in-poc">B085</a></td>
+<td align="left">Non-current liabilities - Obtained funding</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#b160---formula-in-poc">B160</a></td>
+<td align="left">Non-current liabilities - Remaining non-current liabilities</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03273</td>
+<td align="left">Provisions- Provisions for pension liabilities (Q04-A0292-1)</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#liabilities">return</a></p>
+<hr />
+</div>
+<div id="b085---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.17</span> B085 - Formula in POC</h2>
+<p><strong>Non-current liabilities - Obtained Funding</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03277</td>
+<td align="left">Liabilities - Medium and long term debt - Bond loans: convertible</td>
+<td align="left">Q04-A0296-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03278</td>
+<td align="left">Liabilities - Medium and long term debt - Bond loans: non-convertible</td>
+<td align="left">Q04-A0297-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03279</td>
+<td align="left">Liabilities - Medium and long term debt - Participating loans</td>
+<td align="left">Q04-A0298-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03280</td>
+<td align="left">Liabilities - Medium and long term debt - Loans from credit institutions</td>
+<td align="left">Q04-A0299-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03286</td>
+<td align="left">Liabilities - Medium and long term debt - Group companies</td>
+<td align="left">Q04-A0305-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03287</td>
+<td align="left">Liabilities - Medium and long term debt - Affiliate and participating companies</td>
+<td align="left">Q04-A0306-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03288</td>
+<td align="left">Liabilities - Medium and long term debt - Other shareholders (partners)</td>
+<td align="left">Q04-A0307-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03290</td>
+<td align="left">Liabilities - Medium and long term debt - Other loans</td>
+<td align="left">Q04-A0309-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#liabilities">return</a></p>
+<hr />
+</div>
+<div id="b089---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.18</span> B089 - Formula in POC</h2>
+<p><strong>Current liabilities - Total</strong></p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="50%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#b093---formula-in-poc">B093</a></td>
+<td align="left">Current liabilities - Suppliers</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#b161---formula-in-poc">B161</a></td>
+<td align="left">Current liabilities - Remaining current liabilities</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03295</td>
+<td align="left">Liabilities - Short term debt - Bond loans: convertible (Q04-A0314-1)</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03296</td>
+<td align="left">Liabilities - Short term debt - Bond loans: non-convertible (Q04-A0315-1)</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03297</td>
+<td align="left">Liabilities - Short term debt - Participating loans (Q04-A0316-1)</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03298</td>
+<td align="left">Liabilities- Short term debt - Loans from credit institutions (Q04-A0317-1)</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03304</td>
+<td align="left">Liabilities - Short term debt - Group companies (Q04-A0323-1)</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03305</td>
+<td align="left">Liabilities - Short term debt - Affiliate and participating companies (Q04-A0324-1)</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03306</td>
+<td align="left">Liabilities - Short term debt - Other shareholders (partners) (Q04-A0325-1)</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03308</td>
+<td align="left">Liabilities - Short term debt - Other loans (Q04-A0327-1)</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#liabilities">return</a></p>
+<hr />
+</div>
+<div id="b093---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.19</span> B093 - Formula in POC</h2>
+<p><strong>Current liabilities - Suppliers</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF05125</td>
+<td align="left">Assets - Medium and long term debt - Advances to suppliers</td>
+<td align="left">Q04-A0241-3</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center">VF05127</td>
+<td align="left">Assets - Short term debt - Advances to suppliers</td>
+<td align="left">Q04-A0253-3</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03282</td>
+<td align="left">Liabilities - Medium and long term debt - Suppliers (current account)</td>
+<td align="left">Q04-A0301-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03283</td>
+<td align="left">Liabilities - Medium and long term debt - Suppliers - Trade accounts payable: unchecked invoices</td>
+<td align="left">Q04-A0302-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03284</td>
+<td align="left">Liabilities - Medium and long term debt - Suppliers - Notes payable</td>
+<td align="left">Q04-A0303-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03300</td>
+<td align="left">Liabilities - Short term debt - Suppliers (current account)</td>
+<td align="left">Q04-A0319-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03301</td>
+<td align="left">Liabilities - Short term debt - Suppliers - Trade accounts payable: unchecked invoices</td>
+<td align="left">Q04-A0320-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03302</td>
+<td align="left">Liabilities - Short term debt - Suppliers - Notes payable</td>
+<td align="left">Q04-A0321-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#liabilities">return</a></p>
+<hr />
+</div>
+<div id="b094---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.20</span> B094 - Formula in POC</h2>
+<p><strong>Current liabilities - State and other public entities</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03310</td>
+<td align="left">Liabilities - Short term debt - State and other public sector institutions</td>
+<td align="left">Q04-A0329-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03292</td>
+<td align="left">Liabilities - Medium and long term debt - State and other public sector institutions</td>
+<td align="left">Q04-A0311-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#liabilities">return</a></p>
+<hr />
+</div>
+<div id="b143---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.21</span> B143 - Formula in POC</h2>
+<p><strong>Subscribed capital</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03258</td>
+<td align="left">Equity - Capital</td>
+<td align="left">Q04-A0277-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#equity">return</a></p>
+<hr />
+</div>
+<div id="b158---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.22</span> B158 - Formula in POC</h2>
+<p><strong>Non-current assets - Remaining non-current assets</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03171</td>
+<td align="left">Assets - Medium and long term debt - Group companies</td>
+<td align="left">Q04-A0238-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03174</td>
+<td align="left">Assets - Medium and long term debt - Affiliate and participating companies</td>
+<td align="left">Q04-A0239-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03177</td>
+<td align="left">Assets - Medium and long term debt - Other shareholders (partners)</td>
+<td align="left">Q04-A0240-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF05135</td>
+<td align="left">Accruals and deferrals - Deferred tax assets</td>
+<td align="left">Q04-A0272-3</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b159---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.23</span> B159 - Formula in POC</h2>
+<p><strong>Current assets - Remaining current assets</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03182</td>
+<td align="left">Current assets - Medium and long term debt - State and other public sector institutions</td>
+<td align="left">Q04-A0243-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03214</td>
+<td align="left">Assets - Short term debt - State and other public sector institutions</td>
+<td align="left">Q04-A0255-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF05126</td>
+<td align="left">Assets - Medium and long term debt - Advances to fixed assets suppliers</td>
+<td align="left">Q04-A0242-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03185</td>
+<td align="left">Assets - Medium and long term debt - Other debtors</td>
+<td align="left">Q04-A0244-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF05128</td>
+<td align="left">Assets - Short term debt - Advances to fixed assets suppliers</td>
+<td align="left">Q04-A0254-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03217</td>
+<td align="left">Assets - Short term debt - Other debtors</td>
+<td align="left">Q04-A0256-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03244</td>
+<td align="left">Assets - negotiable securities</td>
+<td align="left">Q04-A0265-3-soma</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF05132</td>
+<td align="left">Accruals and deferrals - Accrued profits</td>
+<td align="left">Q04-A0269-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF05134</td>
+<td align="left">Accruals and Deferrals- Deferred daily adjustments in futures contracts</td>
+<td align="left">Q04-A0271-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03203</td>
+<td align="left">Assets - Short term debt - Group companies</td>
+<td align="left">Q04-A0250-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03206</td>
+<td align="left">Assets - Short term debt - Affiliate and participating companies</td>
+<td align="left">Q04-A0251-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03209</td>
+<td align="left">Assets - Short term debt - Other shareholders (partners)</td>
+<td align="left">Q04-A0252-3</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF05133</td>
+<td align="left">Accruals and deferrals - Deferred costs</td>
+<td align="left">Q04-A0270-3</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#assets">return</a></p>
+<hr />
+</div>
+<div id="b160---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.24</span> B160 - Formula in POC</h2>
+<p><strong>Non-current liabilities - Remaining non-current liabilities</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03273</td>
+<td align="left">Liabilities - Provisions- Provisions for pension liabilities</td>
+<td align="left">Q04-A0292-1</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03276</td>
+<td align="left">Liabilities - Provisions - Total</td>
+<td align="left">Q04-A0295-1-soma</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03285</td>
+<td align="left">Liabilities - Medium and long term debt - Fixed assets suppliers - notes payable</td>
+<td align="left">Q04-A0304-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03291</td>
+<td align="left">Liabilities - Medium and long term debt - Fixed assets suppliers (current account)</td>
+<td align="left">Q04-A0310-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03293</td>
+<td align="left">Liabilities - Medium and long term debt - Other creditors</td>
+<td align="left">Q04-A0312-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03315</td>
+<td align="left">Accruals and deferrals - Deferred tax liabilities</td>
+<td align="left">Q04-A0334-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#liabilities">return</a></p>
+<hr />
+</div>
+<div id="b161---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.25</span> B161 - Formula in POC</h2>
+<p><strong>Current liabilities - Remaining current liabilities</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03292</td>
+<td align="left">Liabilities - Medium and long term debt - State and other public sector institutions</td>
+<td align="left">Q04-A0311-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03310</td>
+<td align="left">Liabilities - Short term debt - State and other public sector institutions</td>
+<td align="left">Q04-A0329-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03303</td>
+<td align="left">Liabilities - Short term debt - Fixed assets suppliers - Notes payable</td>
+<td align="left">Q04-A0322-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03309</td>
+<td align="left">Liabilities - Short term debt - Fixed assets suppliers (current account)</td>
+<td align="left">Q04-A0328-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03311</td>
+<td align="left">Liabilities - Short term debt - Other creditors</td>
+<td align="left">Q04-A0330-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03313</td>
+<td align="left">Accruals and deferrals - Accrued costs</td>
+<td align="left">Q04-A0332-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03281</td>
+<td align="left">Liabilities - Medium and long term debt - Advances on sales</td>
+<td align="left">Q04-A0300-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03299</td>
+<td align="left">Liabilities - Short Term advances on sales</td>
+<td align="left">Q04-A0318-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03314</td>
+<td align="left">Accruals and deferrals - Deferred profits</td>
+<td align="left">Q04-A0333-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF04061</td>
+<td align="left">Accruals and deferrals - Investment subsidies</td>
+<td align="left">Q06-A0666</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#liabilities">return</a></p>
+<hr />
+</div>
+<div id="bl005---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.26</span> BL005 - Formula in POC</h2>
+<p><strong>Legal reserves</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03265</td>
+<td align="left">Equity - Reserves - Legal Reserves</td>
+<td align="left">Q04-A0284-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#equity">return</a></p>
+<hr />
+</div>
+<div id="bl007---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.27</span> BL007 - Formula in POC</h2>
+<p><strong>Retained earnings</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03269</td>
+<td align="left">Equity - Retained earnings</td>
+<td align="left">Q04-A0288-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#equity">return</a></p>
+<hr />
+</div>
+<div id="profit-and-loss-statement-variables" class="section level2">
+<h2><span class="header-section-number">19.28</span> Profit and Loss Statement Variables</h2>
+</div>
+<div id="d001---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.29</span> D001 - Formula in POC</h2>
+<p><strong>Turnover</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03045</td>
+<td align="left">Sales - goods</td>
+<td align="left">Q03-A0124-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03046</td>
+<td align="left">Sales - products</td>
+<td align="left">Q03-A0125-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03047</td>
+<td align="left">Services</td>
+<td align="left">Q03-A0126-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d002---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.30</span> D002 - Formula in POC</h2>
+<p><strong>Sales</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF05908</td>
+<td align="left">Sales</td>
+<td align="left">[Q03-A0124-1]+[Q03-A0125-1]</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d005---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.31</span> D005 - Formula in POC</h2>
+<p><strong>Operating subsidies</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03052</td>
+<td align="left">Operating subsidies</td>
+<td align="left">Q03-A0130-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d006---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.32</span> D006 - Formula in POC</h2>
+<p><strong>Variation in production</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03049</td>
+<td align="left">Variation in production</td>
+<td align="left">Q03-A0127-2</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d007---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.33</span> D007 - Formula in POC</h2>
+<p><strong>Capitalized production</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03050</td>
+<td align="left">Capitalized production</td>
+<td align="left">Q03-A0128-2</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d013---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.34</span> D013 - Formula in POC</h2>
+<p><strong>Other incomes - Income from financial assets</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03972</td>
+<td align="left">Revenues - Interests income</td>
+<td align="left">Q05-0545-Nota45-A1439-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF05206</td>
+<td align="left">Revenues - Gains in group and associated companies</td>
+<td align="left">Q05-0545-Nota45-A1440-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF05207</td>
+<td align="left">Revenues - Income from equity holdings</td>
+<td align="left">Q05-0545-Nota45-A1442-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03977</td>
+<td align="left">Revenues - Reversals and other financial revenues</td>
+<td align="left">Q05-0545-Nota45-A1446-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF04054</td>
+<td align="left">Extraordinary revenues – Disposal of financial investments</td>
+<td align="left">Q06-A0659</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d021---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.35</span> D021 - Formula in POC</h2>
+<p><strong>Total income</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d001---formula-in-poc">D001</a></td>
+<td align="left">Turnover</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d111---formula-in-poc">D111</a></td>
+<td align="left">Remaining Income</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d025---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.36</span> D025 - Formula in POC</h2>
+<p><strong>Costs of goods sold and material consumed</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03019</td>
+<td align="left">Cost of goods sold and material consumed - Total</td>
+<td align="left">Q03-A0102-2</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d026---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.37</span> D026 - Formula in POC</h2>
+<p><strong>Supplies and external services</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03020</td>
+<td align="left">Supplies and external services</td>
+<td align="left">Q03-A0103-2</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d029---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.38</span> D029 - Formula in POC</h2>
+<p><strong>Employee expenses</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03021</td>
+<td align="left">Employee expenses - Salaries</td>
+<td align="left">Q03-A0104-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03022</td>
+<td align="left">Employee expenses - Pensions</td>
+<td align="left">Q03-A0105-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03023</td>
+<td align="left">Employee expenses - Others</td>
+<td align="left">Q03-A0106-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d030---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.39</span> D030 - Formula in POC</h2>
+<p><strong>Employee expenses - Salaries</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03021</td>
+<td align="left">Salaries</td>
+<td align="left">Q03-A0104-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d041---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.40</span> D041 - Formula in POC</h2>
+<p><strong>Expenses/reversals of depreciations and amortizations</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03025</td>
+<td align="left">Depreciation of intangible and tangible fixed assets</td>
+<td align="left">Q03-A0107-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03965</td>
+<td align="left">Costs - Amortizations of investment in properties</td>
+<td align="left">Q05-0545-Nota45-A1431-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d053---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.41</span> D053 - Formula in POC</h2>
+<p><strong>Interest expenses</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03964</td>
+<td align="left">Interests paid</td>
+<td align="left">Q05-0545-Nota45-A1429-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d060---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.42</span> D060 - Formula in POC</h2>
+<p><strong>Income tax</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03041</td>
+<td align="left">Income tax</td>
+<td align="left">Q03-A0120-2</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d062---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.43</span> D062 - Formula in POC</h2>
+<p><strong>Total expenses (QS)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d025---formula-in-poc">D025</a></td>
+<td align="left">Costs of goods sold and material consumed</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d026---formula-in-poc">D026</a></td>
+<td align="left">Supplies and external services</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d029---formula-in-poc">D029</a></td>
+<td align="left">Employee expenses</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d108---formula-in-poc">D108</a></td>
+<td align="left">Remaining expenses</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d041---formula-in-poc">D041</a></td>
+<td align="left">Expenses/reversals of depreciations and amortizations</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d053---formula-in-poc">D053</a></td>
+<td align="left">Interest expenses (QS)</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d060---formula-in-poc">D060</a></td>
+<td align="left">Income tax</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d082---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.44</span> D082 - Formula in POC</h2>
+<p><strong>Operating net income</strong></p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="50%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d001---formula-in-poc">D001</a></td>
+<td align="left">Turnover</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d111---formula-in-poc">D111</a></td>
+<td align="left">Remaining income</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d112---formula-in-poc">D112</a></td>
+<td align="left">(Remaining expenses) of which: Impairment losses, changes in fair value and other expenses and losses in fin. invest. and fin. instrum.</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d013---formula-in-poc">D013</a></td>
+<td align="left">(Remaining income) of which: income from financial assets</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d025---formula-in-poc">D025</a></td>
+<td align="left">Costs of goods sold and material consumed</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d026---formula-in-poc">D026</a></td>
+<td align="left">Supplies and external services</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d029---formula-in-poc">D029</a></td>
+<td align="left">Employee expenses</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d108---formula-in-poc">D108</a></td>
+<td align="left">Remaining expenses</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d084---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.45</span> D084 - Formula in POC</h2>
+<p><strong>Earnings before interest, taxes, depreciation and amortization - EBITDA</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d001---formula-in-poc">D001</a></td>
+<td align="left">Turnover</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d111---formula-in-poc">D111</a></td>
+<td align="left">Remaining Income</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d025---formula-in-poc">D025</a></td>
+<td align="left">Costs of goods sold and material consumed</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d026---formula-in-poc">D026</a></td>
+<td align="left">Supplies and external services</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d029---formula-in-poc">D029</a></td>
+<td align="left">Employee expenses</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d108---formula-in-poc">D108</a></td>
+<td align="left">Remaining expenses</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d085---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.46</span> D085 - Formula in POC</h2>
+<p><strong>Earnings before interest and taxes - EBIT</strong></p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="50%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d084---formula-in-poc">D084</a></td>
+<td align="left">Earnings before Interest, Taxes, Depreciation and Amortization - EBITDA</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d041---formula-in-poc">D041</a></td>
+<td align="left">Expenses/reversals of depreciations and amortizations</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d086---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.47</span> D086 - Formula in POC</h2>
+<p><strong>Earnings before taxes - EBT</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d085---formula-in-poc">D085</a></td>
+<td align="left">Earnings before Interest and Tax - EBIT</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d053---formula-in-poc">D053</a></td>
+<td align="left">Interest expenses</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d087---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.48</span> D087 - Formula in POC</h2>
+<p><strong>Net income</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="appendix.html#d086---formula-in-poc">D086</a></td>
+<td align="left">Earnings before Tax - EBT</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center"><a href="appendix.html#d060---formula-in-poc">D060</a></td>
+<td align="left">Income tax</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d108---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.49</span> D108 - Formula in POC</h2>
+<p><strong>Remaining expenses</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03026</td>
+<td align="left">Adjustments</td>
+<td align="left">Q03-A0108-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03034</td>
+<td align="left">Depreciation and adjustments of financial fixed assets</td>
+<td align="left">Q03-A0114-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03055</td>
+<td align="left">Reversals of amortizations and adjustments</td>
+<td align="left">Q03-A0132-1</td>
+<td align="center">-1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03965</td>
+<td align="left">Costs - Amortizations of investment in properties</td>
+<td align="left">Q05-0545-Nota45-A1431-1</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03027</td>
+<td align="left">Provisions</td>
+<td align="left">Q03-A0109-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03993</td>
+<td align="left">Revenues - Provisions decreases</td>
+<td align="left">Q05-0546-Nota46-A1463-1</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03029</td>
+<td align="left">Taxes</td>
+<td align="left">Q03-A0110-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03030</td>
+<td align="left">Other operating costs</td>
+<td align="left">Q03-A0111-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03033</td>
+<td align="left">Losses in group and associated companies</td>
+<td align="left">Q03-A0113-2</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03035</td>
+<td align="left">Interest expenses - relative to group companies</td>
+<td align="left">Q03-A0115-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03036</td>
+<td align="left">Interest expenses - others</td>
+<td align="left">Q03-A0116-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03039</td>
+<td align="left">Extraordinary costs</td>
+<td align="left">Q03-A0118-2</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03964</td>
+<td align="left">Interests paid</td>
+<td align="left">Q05-0545-Nota45-A1429-1</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d111---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.50</span> D111 - Formula in POC</h2>
+<p><strong>Remaining income</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03052</td>
+<td align="left">Operating subsidies</td>
+<td align="left">Q03-A0130-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03049</td>
+<td align="left">Variation in production</td>
+<td align="left">Q03-A0127-2</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03050</td>
+<td align="left">Capitalized production</td>
+<td align="left">Q03-A0128-2</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03051</td>
+<td align="left">Supplementary income</td>
+<td align="left">Q03-A0129-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03053</td>
+<td align="left">Operating revenues</td>
+<td align="left">Q03-A0131-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03057</td>
+<td align="left">Gains in group and associated companies</td>
+<td align="left">Q03-A0134-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03058</td>
+<td align="left">Income from equity holdings</td>
+<td align="left">Q03-A0135-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03059</td>
+<td align="left">Income from negotiable securities and other financial applications - relative to group companies</td>
+<td align="left">Q03-A0136-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03060</td>
+<td align="left">Income from negotiable securities and other financial applications</td>
+<td align="left">Q03-A0137-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03061</td>
+<td align="left">Interest Income and similar earnings- relative to group companies</td>
+<td align="left">Q03-A0138-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03062</td>
+<td align="left">Interest Income and similar earnings - Others</td>
+<td align="left">Q03-A0139-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03065</td>
+<td align="left">Extraordinary revenues</td>
+<td align="left">Q03-A0141-2</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF03993</td>
+<td align="left">Revenues - Decreases in Provisions</td>
+<td align="left">Q05-0546-Nota46-A1463-1</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="d112---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.51</span> D112 - Formula in POC</h2>
+<p><strong>(Remaining expenses) of which: Impairment losses, changes in fair value and other expenses and losses in financial investments and financial instruments</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF05204</td>
+<td align="left">Costs - Losses in group and associated companies</td>
+<td align="left">Q05-0545-Nota45-A1430-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03970</td>
+<td align="left">Costs - Other financial costs</td>
+<td align="left">Q05-0545-Nota45-A1436-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">VF04046</td>
+<td align="left">Extraordinary costs – Disposal of financial investments</td>
+<td align="left">Q06-A0651</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03966</td>
+<td align="left">Costs - Adjustments of financial fixed assets</td>
+<td align="left">Q05-0545-Nota45-A1432-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl002---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.52</span> DL002 - Formula in POC</h2>
+<p><strong>Other expenses - Cash discounts granted</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03968</td>
+<td align="left">Costs - Cash discounts granted</td>
+<td align="left">Q05-0545-Nota45-A1434-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl005---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.53</span> DL005 - Formula in POC</h2>
+<p><strong>Other expenses - Other - Donations</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03978</td>
+<td align="left">Costs - Donations</td>
+<td align="left">Q05-0546-Nota46-A1448-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl011---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.54</span> DL011 - Formula in POC</h2>
+<p><strong>Salaries of corporate bodies</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF04036</td>
+<td align="left">Employee expenses - Salaries of corporate bodies</td>
+<td align="left">Q06-A0641</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl012---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.55</span> DL012 - Formula in POC</h2>
+<p><strong>Employee Salaries</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF04037</td>
+<td align="left">Employee expenses - Salaries of employees</td>
+<td align="left">Q06-A0642</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl013---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.56</span> DL013 - Formula in POC</h2>
+<p><strong>Social security expenses</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF04040</td>
+<td align="left">Employee expenses - Social security expenses</td>
+<td align="left">Q06-A0645</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl014---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.57</span> DL014 - Formula in POC</h2>
+<p><strong>Insurance schemes for accidents at work and occupational diseases</strong></p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="35%" />
+<col width="37%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF04041</td>
+<td align="left">Employee expenses - Insurance schemes for accidents at work and occupational diseases</td>
+<td align="left">Q06-A0646</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl017---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.58</span> DL017 - Formula in POC</h2>
+<p><strong>Services</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03047</td>
+<td align="left">Services</td>
+<td align="left">Q03-A0126-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl043---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.59</span> DL043 - Formula in POC</h2>
+<p><strong>Supplementary income</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03051</td>
+<td align="left">Supplementary income</td>
+<td align="left">Q03-A0129-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl045---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.60</span> DL045 - Formula in POC</h2>
+<p><strong>Employee expenses - Other, except salaries</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF03022</td>
+<td align="left">Employee expenses - Pensions</td>
+<td align="left">Q03-A0105-1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">VF03023</td>
+<td align="left">Employee expenses - Others</td>
+<td align="left">Q03-A0106-1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+</div>
+<div id="dl047---formula-in-poc" class="section level2">
+<h2><span class="header-section-number">19.61</span> DL047 - Formula in POC</h2>
+<p><strong>Indirect taxes</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variable name</th>
+<th align="left">Variable description</th>
+<th align="left">Item in IES</th>
+<th align="center">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">VF04032</td>
+<td align="left">Indirect Taxes</td>
+<td align="left">Q06-A0637</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><a href="description-of-variables.html#b3.-profit-and-loss-statement-variables">return</a></p>
+<hr />
+<p>Footnotes</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="auxiliary-files.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-manual_CBPanel_Jun2018.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
