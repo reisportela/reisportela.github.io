@@ -1,7 +1,7 @@
 ---
-title: "A bookdown Example"
-author: "BPLIM staff"
-date: "2019-05-27"
+title: "Portela's notes"
+author: "Miguel Portela"
+date: "2019-11-27"
 site: "bookdown::bookdown_site"
 output: bookdown::gitbook
 documentclass: book
