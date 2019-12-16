@@ -1,6 +1,6 @@
 ---
 title: "Portela's notes"
-author: "Miguel Portela"
+author: "M Portela"
 date: "2019-11-27"
 site: "bookdown::bookdown_site"
 output: bookdown::gitbook
