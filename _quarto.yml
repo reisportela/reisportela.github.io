@@ -1,0 +1,14 @@
+project:
+  type: book
+
+book:
+  title: "Portela's page"
+  author: "Miguel Portela"
+  date: "15/10/2024"
+  search: true
+  chapters:
+    - index.qmd
+
+format:
+  html:
+    theme: cosmo
