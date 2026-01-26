@@ -1,10 +1,243 @@
 ---
-title: "M Portela"
+title: "Miguel Portela"
 author: "Miguel Portela"
-format: html
+format:
+  html:
+    toc: false
 editor: visual
 ---
 
-## My website
+```{=html}
+<style>
+:root {
+  --ink: #0f172a;
+  --ink-soft: #334155;
+  --accent: #0a4c5a;
+  --accent-2: #d98b2b;
+  --paper: #f6f3ef;
+  --paper-2: #ffffff;
+  --line: #e2e8f0;
+}
 
-Visit [http://www1.eeg.uminho.pt/economia/mangelo/](http://www1.eeg.uminho.pt/economia/mangelo/).
+body {
+  font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 10% 10%, #f9efe2 0%, var(--paper) 40%, #eef4f5 100%);
+}
+
+.page-title {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hero {
+  padding: 2.5rem 0 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 3.8vw, 3.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero .role {
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+}
+
+.hero .pill {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  margin: 0.2rem 0.4rem 0.2rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.panel {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.panel h3 {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-top: 0;
+}
+
+.section-title {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-top: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.pub-list li {
+  margin-bottom: 0.6rem;
+}
+
+.link-row a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.link-row a:hover {
+  border-color: var(--accent-2);
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+}
+
+.cta:hover {
+  background: #083c46;
+}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+```
+
+::: {.hero}
+:::{.grid .grid-2}
+::: {}
+<div class="page-title">Economics - Applied Econometrics - Labor Markets</div>
+# Miguel Portela
+<div class="role">Full Professor of Economics, Universidade do Minho - Director, NIPE - Co-Editor, Portuguese Economic Journal</div>
+<div class="link-row">
+<span class="pill">Braga, Portugal</span>
+<span class="pill">IZA (Bonn)</span>
+<span class="pill">Bank of Portugal</span>
+</div>
+:::
+::: {}
+<div class="panel">
+<h3>Contact</h3>
+<p><strong>Email:</strong> miguel.portela@eeg.uminho.pt<br>
+<strong>GitHub:</strong> <a href="https://github.com/reisportela">github.com/reisportela</a><br>
+<strong>ORCID:</strong> 0000-0002-4721-2081<br>
+<strong>ResearcherID:</strong> C-4509-2008<br>
+<strong>ScopusID:</strong> 8550579200<br>
+<strong>CIENCIAID:</strong> F112-51AF-9460</p>
+<p><a class="cta" href="portela_cv.pdf">Download CV (PDF)</a></p>
+</div>
+:::
+:::
+:::
+
+::: {.panel}
+Miguel Portela holds a PhD in Economics from the University of Amsterdam and is Full Professor of Economics at the University of Minho. He directs the Centre for Research in Economics and Management (NIPE) and serves as Co-Editor of the Portuguese Economic Journal. His research focuses on labor economics, firm performance, and applied econometrics, with special attention to the Portuguese economy. His work appears in journals such as *Econometrica*, *Labour Economics*, *Scandinavian Journal of Economics*, *Small Business Economics*, and *Regional Studies*.
+:::
+
+## Research
+
+::: {.grid .grid-2}
+::: {.panel}
+<h3>Focus Areas</h3>
+<ul>
+  <li>Labor economics and wage dynamics</li>
+  <li>Firm performance and productivity</li>
+  <li>Applied econometrics and policy evaluation</li>
+  <li>Portuguese and European labor markets</li>
+</ul>
+:::
+::: {.panel}
+<h3>Current Positions</h3>
+<ul>
+  <li>Full Professor of Economics, Universidade do Minho (2023-present)</li>
+  <li>Director, Centre for Research in Economics and Management (NIPE) (2022-present)</li>
+  <li>Co-Editor, Portuguese Economic Journal (2020-present)</li>
+  <li>Technical Consultant, Bank of Portugal (2015-present)</li>
+</ul>
+:::
+:::
+
+## Education
+
+::: {.panel}
+<ul>
+  <li>PhD in Economics, Tinbergen Institute / University of Amsterdam, 2007</li>
+  <li>Master in Economics, University of Minho, 2000</li>
+  <li>Graduation in Economics, University of Porto, 1995</li>
+</ul>
+:::
+
+## Selected Publications
+
+::: {.panel}
+<ul class="pub-list">
+  <li>"Mismatch Matters: Education and Productivity in Laggard and Frontier Firms," <em>Journal of Productivity Analysis</em>, forthcoming 2025.</li>
+  <li>"Investment Grants and Firms' Productivity: How Effective is a Grant Booster Shot?," <em>Small Business Economics</em>, 2025.</li>
+  <li>"Minimum Wage and Financially Distressed Firms: Another One Bites the Dust," <em>Labour Economics</em>, 2022.</li>
+  <li>"Enhancing University-Industry Collaboration: The Role of Intermediary Organisations," <em>Journal of Technology Transfer</em>, 2022.</li>
+  <li>"Asymmetric Regional Dynamics in the Portuguese Economy," <em>Regional Studies</em>, 2021.</li>
+  <li>"Returns to Tenure or Seniority?," <em>Econometrica</em>, 2014.</li>
+  <li>"Measurement Error in Education and Growth Regressions," <em>Scandinavian Journal of Economics</em>, 2010.</li>
+</ul>
+:::
+
+## Projects and Leadership
+
+::: {.grid .grid-2}
+::: {.panel}
+<h3>Principal Investigator</h3>
+<ul>
+  <li>It's All About Productivity: contributions to the understanding of the sluggish performance of the Portuguese economy (FCT, 2018-2021).</li>
+  <li>Ensino superior: beneficios economicos e nao economicos (FFMS, 2015-2017).</li>
+  <li>Educacao em Portugal (PO Assistencia Tecnica FSE, 2012-2014).</li>
+  <li>Economics and Education in Portugal: why and for whom? (FCT, 2012-2015).</li>
+</ul>
+:::
+::: {.panel}
+<h3>Selected Service</h3>
+<ul>
+  <li>Member, Productivity Council, Ministry of Economics and Finance (2019-2023).</li>
+  <li>Evaluation panels for FCT and research project reviews (2014-2023).</li>
+  <li>Organizer, Portuguese Economic Journal Annual Meeting (2014, 2023).</li>
+  <li>Organizer, ESPE Annual Conference, Universidade do Minho (2014).</li>
+</ul>
+:::
+:::
+
+## Teaching
+
+::: {.panel}
+Graduate and doctoral teaching in labor economics, econometrics, and economics of education. Regular short courses in policy evaluation, econometrics with Stata, and applied data analysis for universities and public institutions in Portugal and abroad.
+:::
+
+## Visit
+
+Visit [https://sites.google.com/site/reisportela](https://sites.google.com/site/reisportela).
