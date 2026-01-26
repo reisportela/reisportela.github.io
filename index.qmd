@@ -207,6 +207,7 @@ Miguel Portela holds a PhD in Economics from the University of Amsterdam and is 
   <li>"Returns to Tenure or Seniority?," <em>Econometrica</em>, 2014.</li>
   <li>"Measurement Error in Education and Growth Regressions," <em>Scandinavian Journal of Economics</em>, 2010.</li>
 </ul>
+<p><a href="papers.html">Full list of peer-reviewed publications</a></p>
 :::
 
 ## Projects and Leadership
