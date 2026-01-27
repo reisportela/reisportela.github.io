@@ -133,6 +133,14 @@ body {
 .cta:hover {
   background: #083c46;
 }
+
+.hero-photo {
+  width: 170px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+  margin-bottom: 1rem;
+}
 </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -152,6 +160,7 @@ body {
 ::: {.hero}
 :::{.grid .grid-2}
 ::: {}
+![](images/Portela.png){.hero-photo}
 # Miguel Portela
 <div class="role">
   <div>Full Professor of Economics, <a href="https://www.eeg.uminho.pt/en/Pages/default.aspx">EEG</a>, <a href="https://www.uminho.pt/EN/Pages/default.aspx">Universidade do Minho</a></div>
