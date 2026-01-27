@@ -42,6 +42,10 @@ body {
   display: none;
 }
 
+#education {
+  margin-top: 2.8rem;
+}
+
 .hero h1 {
   font-size: clamp(2.4rem, 3.8vw, 3.8rem);
   margin-bottom: 0.5rem;
@@ -179,7 +183,7 @@ body {
 Miguel Portela holds a PhD in Economics from the University of Amsterdam and is Full Professor of Economics at the University of Minho. He directs the Centre for Research in Economics and Management (NIPE) and serves as Co-Editor of the Portuguese Economic Journal. His research focuses on labor economics, firm performance, and applied econometrics, with special attention to the Portuguese economy. His work appears in journals such as *Econometrica*, *Labour Economics*, *Scandinavian Journal of Economics*, *Small Business Economics*, and *Regional Studies*.
 :::
 
-## Education
+## Education {#education}
 
 ::: {.panel}
 <ul>
@@ -187,13 +191,6 @@ Miguel Portela holds a PhD in Economics from the University of Amsterdam and is 
   <li>Master in Economics, University of Minho, 2000</li>
   <li>Graduation in Economics, University of Porto, 1995</li>
 </ul>
-:::
-
-## Research
-
-::: {.panel}
-Research focus: labor economics, firm performance, and applied econometrics, with an emphasis on the Portuguese economy.
-<p style="margin-top: 0.6rem;">See <a href="https://cefup-nipe-rank.eeg.uminho.pt/">Economics Research in Portugal: People and institutions</a>.</p>
 :::
 
 ## Publications
@@ -286,6 +283,12 @@ Research focus: labor economics, firm performance, and applied econometrics, wit
 </ul>
 
 :::
+:::
+
+## Economics Research in Portugal
+
+::: {.panel}
+<p><a href="https://cefup-nipe-rank.eeg.uminho.pt/">Economics Research Rankings in Portugal (Authors and Institutions)</a></p>
 :::
 
 ## Projects and Leadership
