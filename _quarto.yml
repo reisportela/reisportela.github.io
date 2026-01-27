@@ -9,6 +9,7 @@ book:
   search: true
   chapters:
     - index.qmd
+    - papers.qmd
 
 format:
   html:

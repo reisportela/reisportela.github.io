@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Miguel Portela"
 author: ""
 format:
   html:
@@ -130,6 +130,15 @@ body {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var links = document.querySelectorAll('a[href^="http"]');
+    links.forEach(function (link) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    });
+  });
+</script>
 ```
 
 ::: {.hero}
@@ -201,72 +210,75 @@ Research focus: labor economics, firm performance, and applied econometrics, wit
 
 #### Full List (Peer-Reviewed Journals)
 
-- "Timing of cloud computing and big data adoption: Cohort characteristics and firm performance", *Economics of Innovation and New Technology*, 2025. [doi](https://doi.org/10.1080/10438599.2025.2610338)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), Catia Cerqueira, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Mismatch Matters: Education and Productivity in Laggard and Frontier Firms", *Journal of Productivity Analysis*, 2025. [doi](https://doi.org/10.1007/s11123-025-00772-4)  \
-  Beatriz Rocha, Hugo Figueiredo, Carla Sa, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Investment Grants and Firms' Productivity: How Effective is a Grant Booster Shot?", *Small Business Economics*, 2025. [doi](https://doi.org/10.1007/s11187-024-00955-7)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Miguel Chaves](https://orcid.org/0000-0001-6533-7147), [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Workforce skills and firm productivity", *Banco de Portugal Economic Studies*, 2022. [journal](https://www.bportugal.pt/en/publications/banco-de-portugal-economic-studies)  \
-  Joana Cima, Catarina Pimenta, [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Marta Silva
-- "Minimum Wage and Financially Distressed Firms: Another One Bites the Dust", *Labour Economics*, 2022. [doi](https://doi.org/10.1016/j.labeco.2021.102088)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Pedro Bacao](https://orcid.org/0000-0002-3340-1068), Joao Cerejeira, [Helder Costa](https://orcid.org/0000-0002-3265-1153), [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Enhancing University-Industry collaboration: the role of intermediary organisations", *Journal of Technology Transfer*, 2022. [doi](https://doi.org/10.1007/s10961-021-09889-8)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Helder Costa](https://orcid.org/0000-0002-3265-1153), [Ana Paula Faria](https://orcid.org/0000-0001-6674-2566), [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Does domestic demand matter for firms' exports?", *Open Economies Review*, 2022. [doi](https://doi.org/10.1007/s11079-021-09623-9)  \
-  Antonio Rua, Paulo Esteves, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Mass Higher Education and its Civic Impacts in Portugal and Spain", *Journal of Education Finance*, 2021. [doi](https://doi.org/10.1353/jef.2021.a796978)  \
-  Pedro Teixeira, Carla Sa, Joao Cerejeira, Hugo Figueiredo, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Asymmetric regional dynamics in the Portuguese economy: debt, openness and local revenues", *Regional Studies*, 2021. [doi](https://doi.org/10.1080/00343404.2020.1802004)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Helder Costa](https://orcid.org/0000-0002-3265-1153), [Miguel Portela](https://orcid.org/0000-0002-4721-2081), [Miguel Rodrigues](https://orcid.org/0000-0002-2254-2607)
-- "Is the basic life-cycle theory of consumption becoming more relevant? Evidence from Portugal", *Review of Economics of the Household*, 2020. [doi](https://doi.org/10.1007/s11150-019-09471-0)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Pedro Bacao](https://orcid.org/0000-0002-3340-1068), [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "The parental co-immunization hypothesis: An observational competing risks analysis", *Scientific Reports*, 2019. [doi](https://doi.org/10.1038/s41598-01939124-2)  \
-  [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Paul Schweinzer
-- "EEE fees and the WEEE system - A model of efficiency and income in European countries", *Waste Management*, 2018. [doi](https://doi.org/10.1016/j.wasman.2018.08.008)  \
-  [Rita Sousa](https://orcid.org/0000-0002-0709-3399), Elsa Agante, Joao Cerejeira, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Exchange rates, employment and labour market rigidity", *The World Economy*, 2017. [doi](https://doi.org/10.1111/twec.12376)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Pedro Bacao](https://orcid.org/0000-0002-3340-1068), Joao Cerejeira, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Interactions in local governments' spending decisions: Evidence from Portugal", *Regional Studies*, 2015. [doi](https://doi.org/10.1080/00343404.2013.835798)  \
-  Helia Costa, Linda Veiga, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Hours of work and retirement behavior", *IZA Journal of European Labor Studies*, 2014. [doi](https://doi.org/10.1186/2193-9012-3-16)  \
-  C. Sofia Machado, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Returns to tenure or seniority?", *Econometrica*, 2014. [doi](https://doi.org/10.3982/ECTA8688)  \
-  Sebastian Buhai, [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Coen Teulings, Aico van Vuuren
-- "Employment and exchange rates: the role of openness and technology", *Open Economies Review*, 2011. [doi](https://doi.org/10.1007/s11079-010-9191-z)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Pedro Bacao](https://orcid.org/0000-0002-3340-1068), Joao Cerejeira, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Firm ownership and rent sharing", *Journal of Labor Research*, 2011. [doi](https://doi.org/10.1007/s12122-011-9109-6)  \
-  Natalia Pimenta Monteiro, [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Odd Rune Straume
-- "Rent sharing in Portuguese Banking", *Manchester School*, 2011. [doi](https://doi.org/10.1111/j.1467-9957.2011.02183.x)  \
-  Natalia Monteiro, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Measurement error in education and growth regressions", *Scandinavian Journal of Economics*, 2010. [doi](https://doi.org/10.1111/j.1467-9442.2010.01613.x)  \
-  [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Rob Alessie, Coen Teulings
-- "Admission conditions and graduates' employability", *Studies in Higher Education*, 2009. [doi](https://doi.org/10.1080/03075070802688553)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Carla Sa
-- "Perceptions of the Bologna process: what do students' choices reveal?", *Higher Education*, 2009. [doi](https://doi.org/10.1007/s10734-0099205-1)  \
-  [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Carla Sa, [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), Ana Rute Cardoso
-- "Micro Foundations for Wage Flexibility: Wage Insurance at the Firm Level", *Scandinavian Journal of Economics*, 2009. [doi](https://doi.org/10.1111/j.1467-9442.2008.01553.x)  \
-  Ana Rute Cardoso, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Aggregate and sector-specific exchange rate indexes for the Portuguese economy", *Notas Economicas*, 2009. [doi](https://doi.org/10.14195/2183-203X-30-1)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Pedro Bacao](https://orcid.org/0000-0002-3340-1068), Joao Cerejeira, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Demand for Higher Education Programs: The Impact of the Bologna Process", *CESifo Economic Studies*, 2008. [doi](https://doi.org/10.1093/cesifo/ifn013)  \
-  Ana Rute Cardoso, [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Carla Sa, [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885)
-- "Evaluating student allocation in the Portuguese public higher education system", *Higher Education*, 2008. [doi](https://doi.org/10.1007/s10734-007-9097-x)  \
-  [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Nelson Areal, Carla Sa, [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), Joao Cerejeira, Ana Carvalho, Artur Rodrigues
-- "Gender segregation and the wage gap in Portugal: an analysis at the establishment level", *Journal of Economic Inequality*, 2005. [doi](https://doi.org/10.1007/s10888-005-4495-8)  \
-  Jose A. Cabral Vieira, Ana Rute Cardoso, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Measuring skill: a multi-dimensional index", *Economics Letters*, 2001. [doi](https://doi.org/10.1016/S0165-1765(01)00396-2)  \
-  [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "Investimento Empresarial em Portugal: crise e recuperacao", *Notas Economicas*, 2018. [doi](https://doi.org/10.14195/2183-203X_46_4)  \
-  [Fernando Alexandre](https://orcid.org/0000-0001-7933-7885), [Pedro Bacao](https://orcid.org/0000-0002-3340-1068), Carlos Carreira, Joao Cerejeira, Gilberto Loureiro, Antonio Martins, [Miguel Portela](https://orcid.org/0000-0002-4721-2081)
-- "A prediction rule to stratify mortality risk of patients with pulmonary tuberculosis", *PLOS ONE*, 2016. [doi](https://doi.org/10.1371/journal.pone.0162797)  \
-  Bastos HN, Osorio NS, Castro AG, Ramos A, Carvalho T, Meira L, Araujo D, Almeida L, Boaventura R, Fragata P, Chaves C, Costa P7, Portela M, Ferreira I, Magalhaes SP, Rodrigues F, Sarmento-Castro R, Duarte R, Guimaraes JT, Saraiva M
-- "An exploratory study on the contribution of graduate entry students' personality to the diversity of medical student populations", *Perspectives on Medical Education*, 2014. [doi](https://doi.org/10.1007/s40037-014-0150-z)  \
-  Marvao, P., Neto, I., Castelo-Branco, M., Ponte, M., Portela, M., Costa, C., Costa, M.J.
-- "Associations between medical student empathy and personality: a multi-institutional study", *PLOS ONE*, 2014. [doi](https://doi.org/10.1371/journal.pone.0089254)  \
-  Patricio Costa, Raquel Alves, Pedro Marvao, Isabel Neto, [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Manuel Joao Costa
-- "Do personality differences between students from different schools generalize across countries?", *Medical Teacher*, 2014. [doi](https://doi.org/10.3109/0142159X.2014.932903)  \
-  Patricio Costa, Pedro Marvao, Isabel Neto, [Miguel Portela](https://orcid.org/0000-0002-4721-2081), Manuel Joao Costa
+<ol reversed>
+  <li>"Timing of cloud computing and big data adoption: Cohort characteristics and firm performance", <em>Economics of Innovation and New Technology</em>, 2025. <a href="https://doi.org/10.1080/10438599.2025.2610338">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, Catia Cerqueira, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Mismatch Matters: Education and Productivity in Laggard and Frontier Firms", <em>Journal of Productivity Analysis</em>, 2025. <a href="https://doi.org/10.1007/s11123-025-00772-4">doi</a><br>
+  Beatriz Rocha, Hugo Figueiredo, Carla Sa, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Investment Grants and Firms' Productivity: How Effective is a Grant Booster Shot?", <em>Small Business Economics</em>, 2025. <a href="https://doi.org/10.1007/s11187-024-00955-7">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0001-6533-7147">Miguel Chaves</a>, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Workforce skills and firm productivity", <em>Banco de Portugal Economic Studies</em>, 2022. <a href="https://www.bportugal.pt/en/publications/banco-de-portugal-economic-studies">journal</a><br>
+  Joana Cima, Catarina Pimenta, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Marta Silva</li>
+  <li>"Minimum Wage and Financially Distressed Firms: Another One Bites the Dust", <em>Labour Economics</em>, 2022. <a href="https://doi.org/10.1016/j.labeco.2021.102088">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0002-3340-1068">Pedro Bacao</a>, Joao Cerejeira, <a href="https://orcid.org/0000-0002-3265-1153">Helder Costa</a>, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Enhancing University-Industry collaboration: the role of intermediary organisations", <em>Journal of Technology Transfer</em>, 2022. <a href="https://doi.org/10.1007/s10961-021-09889-8">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0002-3265-1153">Helder Costa</a>, <a href="https://orcid.org/0000-0001-6674-2566">Ana Paula Faria</a>, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Does domestic demand matter for firms' exports?", <em>Open Economies Review</em>, 2022. <a href="https://doi.org/10.1007/s11079-021-09623-9">doi</a><br>
+  Antonio Rua, Paulo Esteves, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Mass Higher Education and its Civic Impacts in Portugal and Spain", <em>Journal of Education Finance</em>, 2021. <a href="https://doi.org/10.1353/jef.2021.a796978">doi</a><br>
+  Pedro Teixeira, Carla Sa, Joao Cerejeira, Hugo Figueiredo, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Asymmetric regional dynamics in the Portuguese economy: debt, openness and local revenues", <em>Regional Studies</em>, 2021. <a href="https://doi.org/10.1080/00343404.2020.1802004">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0002-3265-1153">Helder Costa</a>, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, <a href="https://orcid.org/0000-0002-2254-2607">Miguel Rodrigues</a></li>
+  <li>"Is the basic life-cycle theory of consumption becoming more relevant? Evidence from Portugal", <em>Review of Economics of the Household</em>, 2020. <a href="https://doi.org/10.1007/s11150-019-09471-0">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0002-3340-1068">Pedro Bacao</a>, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"The parental co-immunization hypothesis: An observational competing risks analysis", <em>Scientific Reports</em>, 2019. <a href="https://doi.org/10.1038/s41598-01939124-2">doi</a><br>
+  <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Paul Schweinzer</li>
+  <li>"EEE fees and the WEEE system - A model of efficiency and income in European countries", <em>Waste Management</em>, 2018. <a href="https://doi.org/10.1016/j.wasman.2018.08.008">doi</a><br>
+  <a href="https://orcid.org/0000-0002-0709-3399">Rita Sousa</a>, Elsa Agante, Joao Cerejeira, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Exchange rates, employment and labour market rigidity", <em>The World Economy</em>, 2017. <a href="https://doi.org/10.1111/twec.12376">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0002-3340-1068">Pedro Bacao</a>, Joao Cerejeira, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Interactions in local governments' spending decisions: Evidence from Portugal", <em>Regional Studies</em>, 2015. <a href="https://doi.org/10.1080/00343404.2013.835798">doi</a><br>
+  Helia Costa, Linda Veiga, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Hours of work and retirement behavior", <em>IZA Journal of European Labor Studies</em>, 2014. <a href="https://doi.org/10.1186/2193-9012-3-16">doi</a><br>
+  C. Sofia Machado, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Returns to tenure or seniority?", <em>Econometrica</em>, 2014. <a href="https://doi.org/10.3982/ECTA8688">doi</a><br>
+  Sebastian Buhai, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Coen Teulings, Aico van Vuuren</li>
+  <li>"Employment and exchange rates: the role of openness and technology", <em>Open Economies Review</em>, 2011. <a href="https://doi.org/10.1007/s11079-010-9191-z">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0002-3340-1068">Pedro Bacao</a>, Joao Cerejeira, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Firm ownership and rent sharing", <em>Journal of Labor Research</em>, 2011. <a href="https://doi.org/10.1007/s12122-011-9109-6">doi</a><br>
+  Natalia Pimenta Monteiro, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Odd Rune Straume</li>
+  <li>"Rent sharing in Portuguese Banking", <em>Manchester School</em>, 2011. <a href="https://doi.org/10.1111/j.1467-9957.2011.02183.x">doi</a><br>
+  Natalia Monteiro, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Measurement error in education and growth regressions", <em>Scandinavian Journal of Economics</em>, 2010. <a href="https://doi.org/10.1111/j.1467-9442.2010.01613.x">doi</a><br>
+  <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Rob Alessie, Coen Teulings</li>
+  <li>"Admission conditions and graduates' employability", <em>Studies in Higher Education</em>, 2009. <a href="https://doi.org/10.1080/03075070802688553">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Carla Sa</li>
+  <li>"Perceptions of the Bologna process: what do students' choices reveal?", <em>Higher Education</em>, 2009. <a href="https://doi.org/10.1007/s10734-0099205-1">doi</a><br>
+  <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Carla Sa, <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, Ana Rute Cardoso</li>
+  <li>"Micro Foundations for Wage Flexibility: Wage Insurance at the Firm Level", <em>Scandinavian Journal of Economics</em>, 2009. <a href="https://doi.org/10.1111/j.1467-9442.2008.01553.x">doi</a><br>
+  Ana Rute Cardoso, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Aggregate and sector-specific exchange rate indexes for the Portuguese economy", <em>Notas Economicas</em>, 2009. <a href="https://doi.org/10.14195/2183-203X-30-1">doi</a><br>
+  <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, <a href="https://orcid.org/0000-0002-3340-1068">Pedro Bacao</a>, Joao Cerejeira, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Demand for Higher Education Programs: The Impact of the Bologna Process", <em>CESifo Economic Studies</em>, 2008. <a href="https://doi.org/10.1093/cesifo/ifn013">doi</a><br>
+  Ana Rute Cardoso, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Carla Sa, <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a></li>
+  <li>"Evaluating student allocation in the Portuguese public higher education system", <em>Higher Education</em>, 2008. <a href="https://doi.org/10.1007/s10734-007-9097-x">doi</a><br>
+  <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a>, Nelson Areal, Carla Sa, <a href="https://orcid.org/0000-0001-7933-7885">Fernando Alexandre</a>, Joao Cerejeira, Ana Carvalho, Artur Rodrigues</li>
+  <li>"Gender segregation and the wage gap in Portugal: an analysis at the establishment level", <em>Journal of Economic Inequality</em>, 2005. <a href="https://doi.org/10.1007/s10888-005-4495-8">doi</a><br>
+  Jose A. Cabral Vieira, Ana Rute Cardoso, <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+  <li>"Measuring skill: a multi-dimensional index", <em>Economics Letters</em>, 2001. <a href="https://doi.org/10.1016/S0165-1765(01)00396-2">doi</a><br>
+  <a href="https://orcid.org/0000-0002-4721-2081">Miguel Portela</a></li>
+</ol>
+
+#### Books
+
+<ul>
+  <li>Assimetrias e convergencia regional: implicacoes para a descentralizacao e regionalizacao em Portugal [Asymmetries and regional convergence: implications for decentralralization and regionalization in Portugal], ed. Associacao Comercial do Porto, Porto, 2019; ISBN: 978-972-96580-7-5 (Coordinator: Fernando Alexandre; co-authors: Fernando Alexandre, Joao Cerejeira, Miguel Portela, Miguel Rodrigues, Helder Costa).</li>
+  <li>Investimento empresarial e o crescimento da economia portuguesa [Firms' investment and the growth of the Portuguese economy], ed. Fundacao Calouste Gulbenkian, Lisboa, 2017; ISBN: 978-989-8807-39-7 (co-authors: Fernando Alexandre, Pedro Bacao, Carlos Carreira, Joao Cerejeira, Antonio Martins, Miguel Portela).</li>
+  <li>Beneficios do Ensino Superior [Higher Education Benefits], ed. Fundacao Francisco Manuel dos Santos, Lisboa, 2017; ISBN: 978-989-886-337-9 (co-authors: Hugo Figueiredo, Miguel Portela, Carla Sa, Joao Cerejeira, Andre Almeida, Diogo Lourenco).</li>
+  <li>Poupanca e financiamento da economia portuguesa [Saving and financing of the Portuguese economy], ed. Associacao Portuguesa de Seguradores, Imprensa Nacional-Casa da Moeda, Lisboa, 2017; ISBN: 978-972-272-528-6 (co-authors: Fernando Alexandre, Luis Aguiar-Conraria, Pedro Bacao, Miguel Portela).</li>
+  <li>A Economia Portuguesa na Uniao Europeia: 1986 - 2010 [The Portuguese economy in the European Union: 1986 - 2010], Actual Editora, Coimbra: 486 pages, 2014; ISBN: 978-989-694-078-2 (Organizers: Fernando Alexandre, Pedro Bacao, Pedro Lains, Manuel M. F. Martins, Miguel Portela, Marta Simoes).</li>
+  <li>Os fluxos e as remuneracoes de sub- e sobre-escolarizados em Portugal no periodo 1995-2005 [The flows and wages of under- and over-educated workers in Portugal, 1995-2005], GEP, MTSS, Coleccao Cogitum, no. 23, 2009; ISBN: 978-972-704-328-6 (co-authors: Fernando Alexandre, Carla Sa, Joao Cerejeira Silva).</li>
+</ul>
 
 :::
 :::
@@ -287,9 +299,9 @@ Research focus: labor economics, firm performance, and applied econometrics, wit
 <h3>Selected Service</h3>
 <ul>
   <li>Member, Productivity Council, Ministry of Economics and Finance (2019-2023).</li>
+  <li>Vice-President for Research, School of Economics and Management (2011-2014).</li>
+  <li>Director of the PhD Programme in Economics (2016-2021).</li>
   <li>Evaluation panels for FCT and research project reviews (2014-2023).</li>
-  <li>Organizer, Portuguese Economic Journal Annual Meeting (2014, 2023).</li>
-  <li>Organizer, ESPE Annual Conference, Universidade do Minho (2014).</li>
 </ul>
 :::
 :::
@@ -298,6 +310,17 @@ Research focus: labor economics, firm performance, and applied econometrics, wit
 
 ::: {.panel}
 Graduate and doctoral teaching in labor economics, econometrics, and economics of education. Regular short courses in policy evaluation, econometrics with Stata, and applied data analysis for universities and public institutions in Portugal and abroad.
+:::
+
+## Selected Consultancy
+
+::: {.panel}
+<ul>
+  <li>Technical consultant of the micro databases research infrastructure BPLIM (Laboratorio de Investigacao em Microdados), Economics and Research Department, Banco de Portugal, 2015 - ongoing.</li>
+  <li>"Estudo sobre a dinamizacao do mercado de capitais" ["Study on the dynamization of the capital market"], Comissao do Mercado de Valores Mobiliarios (CMVM), 2025.</li>
+  <li>Data science consultancy, INE - Statistics Portugal, 2021/2022.</li>
+  <li>External Collaboration Contract on "Empirical estimates for the causal relation between financialization and wage shares", International Labour Organization (ILO), 2016.</li>
+</ul>
 :::
 
 ## Journals: metrics
