@@ -23,7 +23,7 @@ editor: visual
 body {
   font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", serif;
   color: var(--ink);
-  background: radial-gradient(circle at 10% 10%, #f9efe2 0%, var(--paper) 40%, #eef4f5 100%);
+  background: #ffffff;
 }
 
 .page-title {
