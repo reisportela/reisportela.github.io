@@ -38,6 +38,10 @@ body {
   border-bottom: 1px solid var(--line);
 }
 
+.quarto-title-block {
+  display: none;
+}
+
 .hero h1 {
   font-size: clamp(2.4rem, 3.8vw, 3.8rem);
   margin-bottom: 0.5rem;
