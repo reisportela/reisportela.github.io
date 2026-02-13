@@ -183,6 +183,7 @@ body {
 <strong>ScopusID:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=8550579200">8550579200</a><br>
 <strong>CIENCIAID:</strong> <a href="https://www.cienciavitae.pt/F112-51AF-9460">F112-51AF-9460</a></p>
 <p><a class="cta" href="portela_cv.pdf">Download CV (PDF)</a></p>
+<p><a class="cta" href="files/Growth_Live_Replication.zip">Download Growth Live Replication (ZIP)</a></p>
 </div>
 :::
 :::
